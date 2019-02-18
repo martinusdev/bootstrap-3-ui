@@ -52,7 +52,7 @@ class AppView4 extends View
         $this->initializeUI();
     }
 ```
-Load bootstrap 3 or bootstrap 4 through the AppView:
+Load bootstrap 3 or bootstrap 4 helpers through the AppView:
 ```php
 // In any controller initialize() or any action
 $this->viewBuilder()
