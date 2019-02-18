@@ -13,3 +13,49 @@ composer require friendsofcake/bootstrap-ui:2.0.0-beta4
 
 [cakephp]:http://cakephp.org
 [twbs3]:http://getbootstrap.com
+
+## Usage
+
+The easiest way to use bootstrap 3 and 4 in your CakePHP project is to create an extra AppView for bootstrap 4.
+
+Edit your current AppView.php to start using this package:
+```php
+// AppView.php
+
+use Bootstrap3UI\View\UIViewTrait;
+
+class AppView extends View
+{
+    use UIViewTrait;
+    
+    public function initialize()
+    {
+    	parent::initialize();
+        
+        $this->initializeUI();
+    }
+```
+Create an AppView for pages which use bootstrap 4:
+```php
+// AppView4.php
+
+use BootstrapUI\View\UIViewTrait;
+
+class AppView4 extends View
+{
+    use UIViewTrait;
+    
+    public function initialize()
+    {
+    	parent::initialize();
+        
+        $this->initializeUI();
+    }
+```
+Load bootstrap 3 or bootstrap 4 through the AppView:
+```php
+// In any controller initialize() or any action
+$this->viewBuilder()
+    ->setClassName('App\View\AppView')      // Bootstrap 3
+    ->setClassName('App\View\AppView4')     // Bootstrap 4
+```
