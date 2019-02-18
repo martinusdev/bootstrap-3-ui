@@ -1,7 +1,7 @@
 <?php
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
-use BootstrapUI\View\Helper\PaginatorHelper;
+use Bootstrap3UI\View\Helper\PaginatorHelper;
 use Cake\Core\Configure;
 use Cake\Http\ServerRequest as Request;
 use Cake\I18n\I18n;

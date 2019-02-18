@@ -1,8 +1,8 @@
 <?php
 
-namespace BootstrapUI\View;
+namespace Bootstrap3UI\View;
 
-use BootstrapUI\TestSuite\TestCase;
+use Bootstrap3UI\TestSuite\TestCase;
 use Cake\Core\Configure;
 
 class UIViewTraitTest extends TestCase
@@ -47,12 +47,12 @@ class UIViewTraitTest extends TestCase
     public function testInitializeUI()
     {
         $this->View->initializeUI();
-        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
+        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
 
         $this->View->initializeUI([
             'layout' => true
         ]);
-        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
+        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
 
         $this->View->initializeUI([
             'layout' => 'myLayout'

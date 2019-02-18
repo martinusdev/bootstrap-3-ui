@@ -2,7 +2,7 @@
 /* @var $this \Cake\View\View */
 use Cake\Core\Configure;
 
-$this->Html->css('BootstrapUI.cover', ['block' => true]);
+$this->Html->css('Bootstrap3UI.cover', ['block' => true]);
 $this->prepend('tb_body_attrs', ' class="' . implode(' ', [$this->request->getParam('controller'), $this->request->getParam('action')]) . '" ');
 $this->start('tb_body_start');
 ?>

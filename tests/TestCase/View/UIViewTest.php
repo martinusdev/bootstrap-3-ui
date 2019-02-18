@@ -1,6 +1,6 @@
 <?php
 
-namespace BootstrapUI\View;
+namespace Bootstrap3UI\View;
 
 use Cake\TestSuite\TestCase;
 
@@ -43,6 +43,6 @@ class UIViewTest extends TestCase
     public function testInitialize()
     {
         $this->View->initialize();
-        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
+        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
     }
 }

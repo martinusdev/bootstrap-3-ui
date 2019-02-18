@@ -6,7 +6,7 @@
     >
 
     <testsuites>
-        <testsuite name="BootstrapUI Test Cases">
+        <testsuite name="Bootstrap3UI Test Cases">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

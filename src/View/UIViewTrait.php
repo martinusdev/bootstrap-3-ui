@@ -1,6 +1,6 @@
 <?php
 
-namespace BootstrapUI\View;
+namespace Bootstrap3UI\View;
 
 /**
  * UIViewTrait: Trait that loads the custom UIBootstrap helpers and sets View
@@ -24,17 +24,17 @@ trait UIViewTrait
         if ((!isset($options['layout']) || $options['layout'] === true) &&
             $this->layout === 'default'
         ) {
-            $this->layout = 'BootstrapUI.default';
+            $this->layout = 'Bootstrap3UI.default';
         } elseif (isset($options['layout']) && is_string($options['layout'])) {
             $this->layout = $options['layout'];
         }
 
-        $this->loadHelper('Html', ['className' => 'BootstrapUI.Html']);
-        $this->loadHelper('Form', ['className' => 'BootstrapUI.Form']);
-        $this->loadHelper('Flash', ['className' => 'BootstrapUI.Flash']);
-        $this->loadHelper('Paginator', ['className' => 'BootstrapUI.Paginator']);
+        $this->loadHelper('Html', ['className' => 'Bootstrap3UI.Html']);
+        $this->loadHelper('Form', ['className' => 'Bootstrap3UI.Form']);
+        $this->loadHelper('Flash', ['className' => 'Bootstrap3UI.Flash']);
+        $this->loadHelper('Paginator', ['className' => 'Bootstrap3UI.Paginator']);
         if (class_exists('\Cake\View\Helper\BreadcrumbsHelper')) {
-            $this->loadHelper('Breadcrumbs', ['className' => 'BootstrapUI.Breadcrumbs']);
+            $this->loadHelper('Breadcrumbs', ['className' => 'Bootstrap3UI.Breadcrumbs']);
         }
     }
 }

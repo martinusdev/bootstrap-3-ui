@@ -1,6 +1,6 @@
 <?php
 
-namespace BootstrapUI\View\Helper;
+namespace Bootstrap3UI\View\Helper;
 
 trait OptionsAwareTrait
 {

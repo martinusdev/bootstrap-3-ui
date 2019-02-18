@@ -1,6 +1,6 @@
 <?php
 
-namespace BootstrapUI\View\Helper;
+namespace Bootstrap3UI\View\Helper;
 
 use Cake\Core\Configure\Engine\PhpConfig;
 use Cake\Utility\Hash;
@@ -88,11 +88,11 @@ class FormHelper extends Helper
      * @var array
      */
     protected $_widgets = [
-        'button' => 'BootstrapUI\View\Widget\ButtonWidget',
-        'radio' => ['BootstrapUI\View\Widget\RadioWidget', 'nestingLabel'],
-        'select' => 'BootstrapUI\View\Widget\SelectBoxWidget',
-        'textarea' => 'BootstrapUI\View\Widget\TextareaWidget',
-        '_default' => 'BootstrapUI\View\Widget\BasicWidget',
+        'button' => 'Bootstrap3UI\View\Widget\ButtonWidget',
+        'radio' => ['Bootstrap3UI\View\Widget\RadioWidget', 'nestingLabel'],
+        'select' => 'Bootstrap3UI\View\Widget\SelectBoxWidget',
+        'textarea' => 'Bootstrap3UI\View\Widget\TextareaWidget',
+        '_default' => 'Bootstrap3UI\View\Widget\BasicWidget',
     ];
 
     /**

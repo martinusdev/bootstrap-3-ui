@@ -1,5 +1,5 @@
 <?php
-namespace BootstrapUI\TestSuite;
+namespace Bootstrap3UI\TestSuite;
 
 /**
  * Test case class.

@@ -1,7 +1,7 @@
 <?php
-namespace BootstrapUI\View\Widget;
+namespace Bootstrap3UI\View\Widget;
 
-use BootstrapUI\View\Helper\OptionsAwareTrait;
+use Bootstrap3UI\View\Helper\OptionsAwareTrait;
 use Cake\View\Form\ContextInterface;
 
 trait InputgroupTrait

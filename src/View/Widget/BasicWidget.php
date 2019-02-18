@@ -1,7 +1,7 @@
 <?php
-namespace BootstrapUI\View\Widget;
+namespace Bootstrap3UI\View\Widget;
 
-use BootstrapUI\View\Widget\InputgroupTrait;
+use Bootstrap3UI\View\Widget\InputgroupTrait;
 use Cake\View\Form\ContextInterface;
 
 class BasicWidget extends \Cake\View\Widget\BasicWidget

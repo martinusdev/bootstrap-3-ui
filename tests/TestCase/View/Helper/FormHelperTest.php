@@ -1,8 +1,8 @@
 <?php
 
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
-use BootstrapUI\View\Helper\FormHelper;
+use Bootstrap3UI\View\Helper\FormHelper;
 use Cake\Core\Configure;
 use Cake\Http\ServerRequest as Request;
 use Cake\ORM\TableRegistry;
@@ -34,7 +34,7 @@ class FormHelperTest extends TestCase
 
         Configure::write('Config.language', 'eng');
         Configure::write('App.base', '');
-        Configure::write('App.namespace', 'BootstrapUI\Test\TestCase\View\Helper');
+        Configure::write('App.namespace', 'Bootstrap3UI\Test\TestCase\View\Helper');
         Configure::delete('Asset');
 
         $request = new Request('articles/add');

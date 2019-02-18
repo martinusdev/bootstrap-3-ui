@@ -1,5 +1,5 @@
 <?php
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
@@ -22,7 +22,7 @@ class BreadcrumbsHelperTest extends TestCase
 
         $this->View = new View();
         if (class_exists('\Cake\View\Helper\BreadcrumbsHelper')) {
-            $this->Breadcrumbs = new \BootstrapUI\View\Helper\BreadcrumbsHelper($this->View);
+            $this->Breadcrumbs = new \Bootstrap3UI\View\Helper\BreadcrumbsHelper($this->View);
         } else {
             $this->Breadcrumbs = null;
         }

@@ -1,20 +1,20 @@
 <?php
 
-namespace BootstrapUI\View;
+namespace Bootstrap3UI\View;
 
 use Cake\View\View;
 
 /**
- * UIView: the customised BootstrapUI View class.
+ * UIView: the customised Bootstrap3UI View class.
  *
- * It customises the View::$layout to the BootstrapUI's layout and loads
- * BootstrapUI's helpers.
+ * It customises the View::$layout to the Bootstrap3UI's layout and loads
+ * Bootstrap3UI's helpers.
  *
- * @property \BootstrapUI\View\Helper\FlashHelper $Flash
- * @property \BootstrapUI\View\Helper\FormHelper $Form
- * @property \BootstrapUI\View\Helper\HtmlHelper $Html
- * @property \BootstrapUI\View\Helper\PaginatorHelper $Paginator
- * @property \BootstrapUI\View\Helper\BreadcrumbsHelper $Breadcrumbs
+ * @property \Bootstrap3UI\View\Helper\FlashHelper $Flash
+ * @property \Bootstrap3UI\View\Helper\FormHelper $Form
+ * @property \Bootstrap3UI\View\Helper\HtmlHelper $Html
+ * @property \Bootstrap3UI\View\Helper\PaginatorHelper $Paginator
+ * @property \Bootstrap3UI\View\Helper\BreadcrumbsHelper $Breadcrumbs
  */
 class UIView extends View
 {

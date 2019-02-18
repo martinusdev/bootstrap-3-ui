@@ -1,9 +1,9 @@
 <?php
 
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
-use BootstrapUI\View\Helper\BreadcrumbsHelper;
-use BootstrapUI\View\Helper\HtmlHelper;
+use Bootstrap3UI\View\Helper\BreadcrumbsHelper;
+use Bootstrap3UI\View\Helper\HtmlHelper;
 use Cake\TestSuite\TestCase;
 use Cake\View\View;
 

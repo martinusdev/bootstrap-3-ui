@@ -1,8 +1,8 @@
 <?php
 
-namespace BootstrapUI\Test\TestCase\View\Widget;
+namespace Bootstrap3UI\Test\TestCase\View\Widget;
 
-use BootstrapUI\View\Widget\ButtonWidget;
+use Bootstrap3UI\View\Widget\ButtonWidget;
 use Cake\Http\Session;
 use Cake\TestSuite\TestCase;
 use Cake\View\Form\ContextInterface;

@@ -1,9 +1,9 @@
 <?php
 
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
-use BootstrapUI\TestSuite\TestCase;
-use BootstrapUI\View\Helper\FlashHelper;
+use Bootstrap3UI\TestSuite\TestCase;
+use Bootstrap3UI\View\Helper\FlashHelper;
 use Cake\Core\Plugin;
 use Cake\Http\ServerRequest;
 use Cake\Network\Session;
@@ -40,7 +40,7 @@ class FlashHelperTest extends TestCase
         parent::setUp();
 
         $this->deprecated(function () {
-            Plugin::load('BootstrapUI', ['path' => ROOT . DS]);
+            Plugin::load('Bootstrap3UI', ['path' => ROOT . DS]);
             $this->session = new Session();
         });
 

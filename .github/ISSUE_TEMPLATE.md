@@ -3,7 +3,7 @@ This is a (multiple allowed):
 * [ ] enhancement
 * [ ] feature-discussion (RFC)
 
-* BootstrapUI Version: EXACT RELEASE VERSION (THE VERSION IS IN YOUR COMPOSER.LOCK FILE).
+* Bootstrap3UI Version: EXACT RELEASE VERSION (THE VERSION IS IN YOUR COMPOSER.LOCK FILE).
 * Bootstrap Framework Version: FRAMEWORK VERSION
 * jQuery: LIBRARY VERSION
 * Platform and Target: YOUR WEB-SERVER, DATABASE AND OTHER RELEVANT INFO AND HOW THE REQUEST IS BEING MADE, HERE.

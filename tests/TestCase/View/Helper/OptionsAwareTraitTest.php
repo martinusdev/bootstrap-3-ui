@@ -1,8 +1,8 @@
 <?php
 
-namespace BootstrapUI\Test\TestCase\View\Helper;
+namespace Bootstrap3UI\Test\TestCase\View\Helper;
 
-use BootstrapUI\View\Helper\OptionsAwareTrait;
+use Bootstrap3UI\View\Helper\OptionsAwareTrait;
 use Cake\TestSuite\TestCase;
 
 /**
