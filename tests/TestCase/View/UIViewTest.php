@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-namespace Bootstrap3UI\View;
+namespace BootstrapUI\View;
 
 use Cake\TestSuite\TestCase;
 
@@ -16,7 +17,7 @@ class UIViewTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -29,7 +30,7 @@ class UIViewTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         unset($this->View);
@@ -43,6 +44,25 @@ class UIViewTest extends TestCase
     public function testInitialize()
     {
         $this->View->initialize();
-        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
+        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
+    }
+
+    /**
+     * testHelperConfig
+     *
+     * @return void
+     */
+    public function testHelperConfig()
+    {
+        $View = new UIView(null, null, null, [
+            'helpers' => [
+                'Form' => [
+                    'className' => 'BootstrapUI.Form',
+                    'foo' => 'bar',
+                ],
+            ],
+        ]);
+
+        $this->assertEquals('bar', $View->Form->getConfig('foo'));
     }
 }

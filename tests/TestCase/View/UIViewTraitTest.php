@@ -1,9 +1,10 @@
 <?php
+declare(strict_types=1);
 
-namespace Bootstrap3UI\View;
+namespace BootstrapUI\View;
 
-use Bootstrap3UI\TestSuite\TestCase;
 use Cake\Core\Configure;
+use Cake\TestSuite\TestCase;
 
 class UIViewTraitTest extends TestCase
 {
@@ -19,7 +20,7 @@ class UIViewTraitTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -33,7 +34,7 @@ class UIViewTraitTest extends TestCase
      *
      * @return void
      */
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         unset($this->View);
@@ -47,26 +48,26 @@ class UIViewTraitTest extends TestCase
     public function testInitializeUI()
     {
         $this->View->initializeUI();
-        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
+        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
 
         $this->View->initializeUI([
-            'layout' => true
+            'layout' => true,
         ]);
-        $this->assertEquals('Bootstrap3UI.default', $this->View->getLayout());
+        $this->assertEquals('BootstrapUI.default', $this->View->getLayout());
 
         $this->View->initializeUI([
-            'layout' => 'myLayout'
+            'layout' => 'myLayout',
         ]);
         $this->assertEquals('myLayout', $this->View->getLayout());
 
         $this->View->setLayout('other_layout');
         $this->View->initializeUI([
-            'layout' => false
+            'layout' => false,
         ]);
         $this->assertEquals('other_layout', $this->View->getLayout());
 
         $this->View->initializeUI([
-            'layout' => ''
+            'layout' => '',
         ]);
         $this->assertSame('', $this->View->getLayout());
     }
@@ -75,10 +76,8 @@ class UIViewTraitTest extends TestCase
     {
         $cell = $this->View->cell('Articles');
 
-        $this->deprecated(function () use ($cell) {
-            $this->assertEquals('display', $cell->template);
-        });
+        $this->assertEquals('display', $cell->viewBuilder()->getTemplate());
         // 2016-03-28: used trim() to remove LF. assert was failing on Windows.
-        $this->assertEquals("articles cell display", trim($cell));
+        $this->assertEquals('articles cell display', trim((string)$cell));
     }
 }

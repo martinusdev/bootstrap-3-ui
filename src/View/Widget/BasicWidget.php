@@ -1,7 +1,8 @@
 <?php
-namespace Bootstrap3UI\View\Widget;
+declare(strict_types=1);
 
-use Bootstrap3UI\View\Widget\InputgroupTrait;
+namespace BootstrapUI\View\Widget;
+
 use Cake\View\Form\ContextInterface;
 
 class BasicWidget extends \Cake\View\Widget\BasicWidget
@@ -25,7 +26,7 @@ class BasicWidget extends \Cake\View\Widget\BasicWidget
      * @param \Cake\View\Form\ContextInterface $context The current form context.
      * @return string
      */
-    public function render(array $data, ContextInterface $context)
+    public function render(array $data, ContextInterface $context): string
     {
         return $this->_withInputGroup($data, $context);
     }
