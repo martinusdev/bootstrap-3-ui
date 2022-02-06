@@ -1,5 +1,5 @@
 {
-    "name": "friendsofcake/bootstrap-ui",
+    "name": "martinusdev/bootstrap-3-ui",
     "description": "Bootstrap front-end framework support for CakePHP",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "bootstrap", "front-end"],
