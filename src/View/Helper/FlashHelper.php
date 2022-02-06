@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\View\Helper;
+namespace Bootstrap3UI\View\Helper;
 
 use Cake\View\Helper;
 
@@ -21,14 +21,14 @@ class FlashHelper extends Helper
     protected $_defaultConfig = [
         'class' => ['alert', 'alert-dismissible', 'fade', 'show'],
         'attributes' => ['role' => 'alert'],
-        'element' => 'BootstrapUI.flash/default',
+        'element' => 'Bootstrap3UI.flash/default',
     ];
 
     /**
      * Similar to the core's FlashHelper used to render the message set in FlashComponent::set().
      *
      * If the flash element configured is one of "default", "error", "info", "success" or "warning"
-     * "BootstrapUI." is prepended to the name so that the element is used from this plugin.
+     * "Bootstrap3UI." is prepended to the name so that the element is used from this plugin.
      *
      * @param string $key The [Flash.]key you are rendering in the view.
      * @param array $options Additional options to use for the creation of this flash message.

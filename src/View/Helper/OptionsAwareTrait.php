@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Bootstrap3UI\View\Helper;
 
-use BootstrapUI\View\Helper\Types\Classes;
-use BootstrapUI\View\Helper\Types\Element;
+use Bootstrap3UI\View\Helper\Types\Classes;
+use Bootstrap3UI\View\Helper\Types\Element;
 
 trait OptionsAwareTrait
 {

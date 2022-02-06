@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\Command;
+namespace Bootstrap3UI\Command;
 
 use Cake\Command\Command;
 use Cake\Console\Arguments;
@@ -45,7 +45,7 @@ class CopyLayoutsCommand extends Command
      */
     protected function _copyLayouts(string $targetPath): bool
     {
-        $source = Plugin::path('BootstrapUI') . 'templates' . DS . 'layout' . DS . 'examples';
+        $source = Plugin::path('Bootstrap3UI') . 'templates' . DS . 'layout' . DS . 'examples';
 
         $filesystem = new Filesystem();
 

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\Command;
+namespace Bootstrap3UI\Command;
 
 use Cake\Command\Command;
 use Cake\Console\Arguments;
@@ -67,8 +67,8 @@ class BootstrapCommand extends Command implements CommandCollectionAwareInterfac
     {
         return $parser
             ->setDescription(
-                'The BootstrapUI console provides commands for installing dependencies ' .
-                'and samples, and for modifying your application to use BootstrapUI.'
+                'The Bootstrap3UI console provides commands for installing dependencies ' .
+                'and samples, and for modifying your application to use Bootstrap3UI.'
             );
     }
 }

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\Command;
+namespace Bootstrap3UI\Command;
 
 use Cake\Command\Command;
 use Cake\Command\PluginAssetsRemoveCommand;
@@ -98,7 +98,7 @@ class InstallCommand extends Command
     {
         $io->info('Removing possibly existing plugin assets...');
 
-        $result = $this->executeCommand(PluginAssetsRemoveCommand::class, ['name' => 'BootstrapUI'], $io);
+        $result = $this->executeCommand(PluginAssetsRemoveCommand::class, ['name' => 'Bootstrap3UI'], $io);
         if (
             $result !== static::CODE_SUCCESS &&
             $result !== null
@@ -118,7 +118,7 @@ class InstallCommand extends Command
     {
         $io->info('Linking plugin assets...');
 
-        $result = $this->executeCommand(PluginAssetsSymlinkCommand::class, ['name' => 'BootstrapUI'], $io);
+        $result = $this->executeCommand(PluginAssetsSymlinkCommand::class, ['name' => 'Bootstrap3UI'], $io);
         if (
             $result !== static::CODE_SUCCESS &&
             $result !== null
@@ -163,7 +163,7 @@ class InstallCommand extends Command
     {
         $filesystem = new Filesystem();
 
-        return $filesystem->deleteDir(Plugin::path('BootstrapUI') . 'node_modules');
+        return $filesystem->deleteDir(Plugin::path('Bootstrap3UI') . 'node_modules');
     }
 
     /**
@@ -176,7 +176,7 @@ class InstallCommand extends Command
      */
     protected function _runNPMInstall(&$output, &$return, ConsoleIo $io): void
     {
-        $pluginPath = Plugin::path('BootstrapUI');
+        $pluginPath = Plugin::path('Bootstrap3UI');
         if (!$this->_changeWorkingDirectory($pluginPath)) {
             $io->error("Could not change into plugin directory `$pluginPath`.");
             $this->abort();
@@ -248,7 +248,7 @@ class InstallCommand extends Command
     {
         $filesystem = new Filesystem();
 
-        $path = Plugin::path('BootstrapUI') . 'webroot';
+        $path = Plugin::path('Bootstrap3UI') . 'webroot';
         $except = '@
             ^.*
             (?<!(\\\\|\/)cover\.css)
@@ -279,7 +279,7 @@ class InstallCommand extends Command
     {
         $filesystem = new Filesystem();
 
-        $webrootPath = Plugin::path('BootstrapUI') . 'webroot' . DS;
+        $webrootPath = Plugin::path('Bootstrap3UI') . 'webroot' . DS;
         $cssPath = $webrootPath . 'css' . DS;
         $jsPath = $webrootPath . 'js' . DS;
 
@@ -322,7 +322,7 @@ class InstallCommand extends Command
     {
         $filesystem = new Filesystem();
 
-        $nodeModulesPath = Plugin::path('BootstrapUI') . 'node_modules' . DS;
+        $nodeModulesPath = Plugin::path('Bootstrap3UI') . 'node_modules' . DS;
         $paths = [
             $nodeModulesPath . 'bootstrap/dist',
             $nodeModulesPath . 'jquery/dist',

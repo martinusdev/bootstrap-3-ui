@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI;
+namespace Bootstrap3UI;
 
-use BootstrapUI\Command\BootstrapCommand;
-use BootstrapUI\Command\CopyLayoutsCommand;
-use BootstrapUI\Command\InstallCommand;
-use BootstrapUI\Command\ModifyViewCommand;
+use Bootstrap3UI\Command\BootstrapCommand;
+use Bootstrap3UI\Command\CopyLayoutsCommand;
+use Bootstrap3UI\Command\InstallCommand;
+use Bootstrap3UI\Command\ModifyViewCommand;
 use Cake\Console\CommandCollection;
 use Cake\Core\BasePlugin;
 
@@ -17,7 +17,7 @@ class Plugin extends BasePlugin
      *
      * @var string
      */
-    protected $name = 'BootstrapUI';
+    protected $name = 'Bootstrap3UI';
 
     /**
      * Do bootstrapping or not

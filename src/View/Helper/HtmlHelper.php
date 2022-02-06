@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\View\Helper;
+namespace Bootstrap3UI\View\Helper;
 
 use Cake\View\View;
 

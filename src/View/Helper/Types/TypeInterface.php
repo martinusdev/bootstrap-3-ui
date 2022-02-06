@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\View\Helper\Types;
+namespace Bootstrap3UI\View\Helper\Types;
 
 /**
  * TypeInterface

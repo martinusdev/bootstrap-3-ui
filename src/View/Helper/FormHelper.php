@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\View\Helper;
+namespace Bootstrap3UI\View\Helper;
 
 use Cake\Core\Configure\Engine\PhpConfig;
 use Cake\Utility\Hash;
@@ -270,12 +270,12 @@ class FormHelper extends Helper
      * @var array
      */
     protected $_widgets = [
-        'button' => 'BootstrapUI\View\Widget\ButtonWidget',
-        'datetime' => 'BootstrapUI\View\Widget\DateTimeWidget',
-        'file' => ['BootstrapUI\View\Widget\FileWidget', 'label'],
-        'select' => 'BootstrapUI\View\Widget\SelectBoxWidget',
-        'textarea' => 'BootstrapUI\View\Widget\TextareaWidget',
-        '_default' => 'BootstrapUI\View\Widget\BasicWidget',
+        'button' => 'Bootstrap3UI\View\Widget\ButtonWidget',
+        'datetime' => 'Bootstrap3UI\View\Widget\DateTimeWidget',
+        'file' => ['Bootstrap3UI\View\Widget\FileWidget', 'label'],
+        'select' => 'Bootstrap3UI\View\Widget\SelectBoxWidget',
+        'textarea' => 'Bootstrap3UI\View\Widget\TextareaWidget',
+        '_default' => 'Bootstrap3UI\View\Widget\BasicWidget',
     ];
 
     /**

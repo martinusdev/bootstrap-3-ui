@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace BootstrapUI\View;
+namespace Bootstrap3UI\View;
 
 /**
  * UIViewTrait: Trait that loads the custom UIBootstrap helpers and sets View
@@ -25,17 +25,17 @@ trait UIViewTrait
             (!isset($options['layout']) || $options['layout'] === true) &&
             $this->layout === 'default'
         ) {
-            $this->layout = 'BootstrapUI.default';
+            $this->layout = 'Bootstrap3UI.default';
         } elseif (isset($options['layout']) && is_string($options['layout'])) {
             $this->layout = $options['layout'];
         }
 
         $helpers = [
-            'Html' => ['className' => 'BootstrapUI.Html'],
-            'Form' => ['className' => 'BootstrapUI.Form'],
-            'Flash' => ['className' => 'BootstrapUI.Flash'],
-            'Paginator' => ['className' => 'BootstrapUI.Paginator'],
-            'Breadcrumbs' => ['className' => 'BootstrapUI.Breadcrumbs'],
+            'Html' => ['className' => 'Bootstrap3UI.Html'],
+            'Form' => ['className' => 'Bootstrap3UI.Form'],
+            'Flash' => ['className' => 'Bootstrap3UI.Flash'],
+            'Paginator' => ['className' => 'Bootstrap3UI.Paginator'],
+            'Breadcrumbs' => ['className' => 'Bootstrap3UI.Breadcrumbs'],
         ];
 
         $this->helpers = array_merge($helpers, $this->helpers);

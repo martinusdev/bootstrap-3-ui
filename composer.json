@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BootstrapUI\\": "src"
+            "Bootstrap3UI\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BootstrapUI\\Test\\": "tests",
+            "Bootstrap3UI\\Test\\": "tests",
             "TestApp\\": "tests/test_app/TestApp"
         }
     },
