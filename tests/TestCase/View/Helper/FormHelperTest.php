@@ -28,7 +28,7 @@ class FormHelperTest extends TestCase
      */
     public $article;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -67,7 +67,7 @@ class FormHelperTest extends TestCase
         Router::connect('/:controller/:action/*');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         unset($this->Form, $this->View);
@@ -1564,27 +1564,27 @@ class FormHelperTest extends TestCase
     public function testFormControlClassInjection()
     {
         $result = $this->Form->text('foo');
-        $this->assertContains('class="form-control"', $result);
+        $this->assertStringContainsString('class="form-control"', $result);
 
         $result = $this->Form->text('foo', ['class' => 'custom']);
-        $this->assertContains('class="custom form-control"', $result);
+        $this->assertStringContainsString('class="custom form-control"', $result);
 
         $result = $this->Form->select('foo');
-        $this->assertContains('class="form-control"', $result);
+        $this->assertStringContainsString('class="form-control"', $result);
 
         $result = $this->Form->textarea('foo');
-        $this->assertContains('class="form-control"', $result);
+        $this->assertStringContainsString('class="form-control"', $result);
 
         $result = $this->Form->dateTime('foo');
-        $this->assertContains('class="form-control"', $result);
+        $this->assertStringContainsString('class="form-control"', $result);
 
         $result = $this->Form->file('foo');
-        $this->assertNotContains('"form-control"', $result);
+        $this->assertStringNotContainsString('"form-control"', $result);
 
         $result = $this->Form->checkbox('foo');
-        $this->assertNotContains('"form-control"', $result);
+        $this->assertStringNotContainsString('"form-control"', $result);
 
         $result = $this->Form->radio('foo', ['1' => 'Opt 1', '2' => 'Opt 2']);
-        $this->assertNotContains('"form-control"', $result);
+        $this->assertStringNotContainsString('"form-control"', $result);
     }
 }

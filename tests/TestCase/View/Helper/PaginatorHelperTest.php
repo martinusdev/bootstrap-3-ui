@@ -30,7 +30,7 @@ class PaginatorHelperTest extends TestCase
      *
      * @return void
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -72,7 +72,7 @@ class PaginatorHelperTest extends TestCase
         ];
         $this->assertHtml($expected, $result);
 
-        $this->Paginator->request = $this->Paginator->request->withParam('paging', [
+        $this->Paginator->request = $this->Paginator->request->withAttribute('paging', [
             'Client' => [
                 'page' => 8,
                 'current' => 3,
